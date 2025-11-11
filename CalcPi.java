@@ -10,7 +10,7 @@ public class CalcPi {
 
 		for (int i = 1; i < n; i ++){
 
-			counter+=2;
+			counter += 2;
 			quarterPi = quarterPi + (Math.pow(-1, i)/ (counter));
 			
 		}
@@ -18,6 +18,6 @@ public class CalcPi {
 		double aproximated = quarterPi * 4;
 
 		System.out.println("pi according to Java: " + Math.PI);
-		System.out.println("pi, aproximated:  " + aproximated);
+		System.out.println("pi, approximated:  " + aproximated);
 	}
 }

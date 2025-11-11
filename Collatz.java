@@ -11,7 +11,7 @@ public class Collatz {
 
 		for (int i = 1; i <= seed; i++){
 
-			String output= "";
+			String output = "";
 			int new_num = i;
 			int counter = 1;
 			output += i + " "; 
@@ -28,16 +28,16 @@ public class Collatz {
 				else {
 					new_num = new_num * 3 + 1;
 				}
-				output+= new_num + " ";
+				output += new_num + " ";
 				counter ++;
 
 			}
 			if (mode.equals("v")){
-				System.out.print(output+ "(" + counter+ ")");
+				System.out.print(output+ "(" + counter + ")");
 				System.out.println();
 			}
 		}	
 
-		System.out.println("Every one of the first " +seed + " hailstone sequenceas reached 1.");
+		System.out.println("Every one of the first " +seed + " hailstone sequences reached 1.");
 	}
 }
