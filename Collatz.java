@@ -7,31 +7,37 @@ public class Collatz {
 	    
 		int seed = Integer.parseInt(args[0]);	
 		String mode = args[1];
-		int new_num;
-		
 
 
 		for (int i = 1; i <= seed; i++){
 
-			int counter = 0;
-			while (new_num != 1)
-			    new_num = i;
-				System.out.print(new_num);
+			String output= "";
+			int new_num = i;
+			int counter = 1;
+			output += i + " "; 
+			if (new_num == 1){
+				new_num = new_num * 3 + 1;
+				counter ++;
+				output += new_num + " ";
+			}
+			while (new_num != 1){
+					
 				if (new_num % 2 == 0){
 					new_num = new_num / 2;
 				} 
 				else {
 					new_num = new_num * 3 + 1;
 				}
+				output+= new_num + " ";
 				counter ++;
-			}	
-			System.out.print("(" + counter+ ")");
-			System.out.println();
-		}
 
-		System.out.println()
+			}
+			if (mode.equals("v")){
+				System.out.print(output+ "(" + counter+ ")");
+				System.out.println();
+			}
+		}	
 
-
-
+		System.out.println("Every one of the first " +seed + " hailstone sequenceas reached 1.");
 	}
 }
