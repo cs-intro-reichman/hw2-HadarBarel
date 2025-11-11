@@ -8,7 +8,7 @@ public class Cheers {
              String str = args [0];
 	     int n = Integer.parseInt(args[1]);
              
-             String need_an = "A E F H I L M N O R S X";
+             String need_an = "A a E e F f H h I i L l M  m N n O o R r S s X x";
 
              for (int i = 0; i < str.length(); i ++){
 
