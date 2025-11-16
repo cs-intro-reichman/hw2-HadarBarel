@@ -1,3 +1,12 @@
+/*
+Feedback:
+Great work!
+Yam
+*/
+
+
+
+
 // Demonstrates the Collatz conjecture.
 
 // שאלה 5
@@ -41,3 +50,4 @@ public class Collatz {
 		System.out.println("Every one of the first " +seed + " hailstone sequences reached 1.");
 	}
 }
+
